@@ -128,9 +128,23 @@ main {
     header {
         margin-block: 81px;
     }
-    .tema img {
-        
+    .tema {
+        gap: 16px;
     }
+    .tema img {
+        width: 24px;
+        
+
+    }
+    .tema button {
+        height: 28px;
+        width: 48px
+    }
+    .tema button div {
+        height: 20px;
+        width: 20px;
+    }
+
     main {
         display: flex;
         max-width: 1160px;
