@@ -22,6 +22,7 @@
     --white: #fff;
     --green: #26d782;
     --red: #ee5454;
+    --white: #fff;   
     --bg-mobile: url(../../assets/images/pattern-background-mobile-light.svg);
     --bg-desktop: url(../../assets/images/pattern-background-desktop-light.svg);
 } 
@@ -110,7 +111,9 @@ main h2 strong {
     gap: 16px;
     border-radius: 12px;
     margin-bottom:12px;
+    box-shadow: var(--shadow);
 }
+
 .pontuacao strong {
     font-size: 88px;
     color: var(--primary-text-color);
@@ -130,7 +133,9 @@ main button {
     font-size: 18px;
     font-weight: 500;
     transition: background 0.3s;
+    box-shadow: var(--shadow);
 }
+
 main button:hover {
     background: var(--purple-houver);
     cursor: pointer;
@@ -182,20 +187,16 @@ main button:hover {
      main h2 {
         font-size: 64px;
      }
-
      .pontuacao {
         border-radius: 24px;
         margin-bottom: 32px;  
      }
-
      .pontuacao strong {
         font-size: 144px;
      }
-
      .pontuacao p {
         font-size: 24px;
      }
-
      main button {
         font-size: 22px;
         padding: 24px;
