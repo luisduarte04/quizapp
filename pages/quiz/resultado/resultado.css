@@ -19,9 +19,6 @@
     --bg-css: #e0fdef;
     --bg-javascript: #ebf0ff;
     --bg-acessibilidade: #f6e7ff;
-    --white: #fff;
-    --green: #26d782;
-    --red: #ee5454;
     --white: #fff;   
     --bg-mobile: url(../../assets/images/pattern-background-mobile-light.svg);
     --bg-desktop: url(../../assets/images/pattern-background-desktop-light.svg);
@@ -83,7 +80,10 @@ header {
     border: 0;
     border-radius: 999px;
     padding: 4px;
+    display: flex;
+    cursor: pointer;
 }
+
 .tema button div {
     background: var(--white);
     width: 12px;
@@ -113,7 +113,6 @@ main h2 strong {
     margin-bottom:12px;
     box-shadow: var(--shadow);
 }
-
 .pontuacao strong {
     font-size: 88px;
     color: var(--primary-text-color);
@@ -135,7 +134,6 @@ main button {
     transition: background 0.3s;
     box-shadow: var(--shadow);
 }
-
 main button:hover {
     background: var(--purple-houver);
     cursor: pointer;
