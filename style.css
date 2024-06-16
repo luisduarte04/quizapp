@@ -1,9 +1,9 @@
-* {
-    margin: 0px;
-    padding: 0px;
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Rubik", sans-serif;
-    --webkit-font-smoothing: antialiased; 
+    -webkit-font-smoothing: antialiased;
 }
 :root {
     --bg-color: #f4f6fa;
@@ -15,25 +15,22 @@
     --bg-html: #fff1e9;
     --bg-css: #e0fdef;
     --bg-javascript: #ebf0ff;
-    --bg-acessibilidade: #f6efff
+    --bg-acessibilidade: #f6e7ff;
     --white: #fff;
     --bg-mobile: url(./assets/images/pattern-background-mobile-light.svg);
     --bg-desktop: url(./assets/images/pattern-background-desktop-light.svg);
-}
+} 
 body.escuro {
-    --bg-color : #313e52;
+    --bg-color: #313e51;
     --bg-mobile: url(./assets/images/pattern-background-mobile-dark.svg);
     --bg-desktop: url(./assets/images/pattern-background-desktop-dark.svg);
     --primary-text-color: #fff;
-    --second-text-color: #abc1e1;
+    --secondary-text-color: #abc1e1;
     --button-bg: #3b4d66;
-    --shadow: 0px 16px 40px 0px rgba(48, 62, 81, 0.14);
-
-
-
+    --shadow: 0px 16px 40px 0px rgba(49, 62, 81, 0.14);
 }
 body {
-    height: 100vh;
+    height: 100svh;
     background: var(--bg-mobile) var(--bg-color);
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,24 +39,28 @@ header {
     padding: 16px 24px;
     display: flex;
     justify-content: flex-end;
+    max-width: 1160px;
+    margin-inline: auto;
 }
 .tema {
     padding: 8px 0;
     display: flex;
     align-items: center;
     gap: 8px;
-}
+} 
 .tema img {
     width: 16px;
 }
 .tema button {
-    height: 28px;
+    height: 20px;
     width: 32px;
     background: var(--purple);
-    border: 0px;
+    border: 0;
     border-radius: 999px;
     padding: 4px;
+    display: flex;
 }
+
 .tema button div {
     background: var(--white);
     width: 12px;
@@ -81,6 +82,7 @@ main {
 .boas_vindas h1 strong {
     font-weight: 500;
 }
+
 .boas_vindas p {
     color: var(--secondary-text-color);
     font-size: 14px;
@@ -92,6 +94,7 @@ main {
     flex-direction: column;
     gap: 12px;
 }
+ 
 .assuntos button {
     border: none;
     background: var(--button-bg);
@@ -103,89 +106,80 @@ main {
     box-shadow: var(--shadow);
     font-size: 18px;
     font-weight: 500;
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
 }
-
 .assuntos button div {
     width: 40px;
     height: 40px;
     padding: 5px;
-    border-radius: 5px;
-
+    border-radius: 5px; 
 }
 .assuntos button img {
     width: 100%;
 }
-
-.botao_html div {
-    background: var(--bg-html);
+.botao_html div{
+    background: var(--bg-html);     
 }
-.botao_css div {
-    background: var(--bg-css);
+.botao_css div{
+    background: var(--bg-css);    
 }
-.botao_javascript div {
+.botao_javascript div{
     background: var(--bg-javascript);
 }
-.botao_acessibilidade div {
+
+.boao_acessibilidade div {
     background: var(--bg-acessibilidade);
 }
 
 @media(min-width: 1100px) {
-    body {
+     body {
         background: var(--bg-desktop) var(--bg-color);
         background-size: cover;
         background-repeat: no-repeat;
-
-    }
-    header {
+     }
+     header {
         margin-block: 81px;
-        
-    }
-    .tema {
+     }
+     .tema {
         gap: 16px;
-    }
-    .tema img {
-        width: 24px;
-        
-
-    }
-    .tema button {
+     }
+     .tema img {
+         width: 24px;
+     }
+     .tema button {
+        width: 48px;     
         height: 28px;
-        width: 48px
-    }
-    .tema button div {
-        height: 20px;
+     }
+     .tema button div {
         width: 20px;
-    }
-
-    main {
+        height: 20px;
+     }
+     main {        
         display: flex;
-        max-width: 1160px;
+        max-width: 1160px; 
         margin-inline: auto;
-
-    }
-    section {
-        width: 100%
-    }
-    .boas_vindas h1 {
-        font-size:64px ;
-        margin-bottom: 48px ;
-    }
-    .boas_vindas p {
+     }
+     section {
+        width: 100%;
+     }
+     .boas_vindas h1 {
+        font-size: 64px;
+        margin-bottom: 48px;
+     }
+     .boas_vindas p {
         font-size: 20px;
-
-    }
-    .assuntos {
-        gap: 24px;
-    }
-    .assuntos button {
+     }
+     .assuntos {
+        gap:24px;
+     }
+     .assuntos button {
         font-size: 28px;
         padding: 20px;
         gap: 32px;
-    }
-    .assuntos button div {
+     }
+     .assuntos button div {
+        width: 56px;
         height: 56px;
         padding: 8px;
-        width: 56px;
-    }
+     }
 }
